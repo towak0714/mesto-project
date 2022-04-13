@@ -1,0 +1,4 @@
+.profile__descripton {
+    display: flex;
+    flex-wrap: wrap;
+}
