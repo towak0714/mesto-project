@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,77 +9,81 @@
 </head>
 <body class="page">
     <header class="header">
-        <img src="./images/mesto.png" alt="логотим место" class="header__logo">
+        <img src="./images/mesto.svg" alt="логотиg место" class="header__logo">
     </header>
-    <section class="profile">
-        <div class="profile__descripton">
-            <img src="./images/zakivkusto.png" alt="аватар профиля" class="profile__avatar">
-            <div class="profile__info">
-                <h1 class="profile__name">Жак-Ив Кусто</h1>
-                <button class="profile__button_edit"></button> 
-                <p class="profile__bio">Исследователь океана</p>
+    <main class="content">
+        <section class="profile">
+            <div class="profile__descripton">
+                <img src="./images/zakivkusto.png" alt="аватар профиля" class="profile__avatar">
+                <div class="profile__info">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button class="profile__button-edit" type="button"></button>
+                    <p class="profile__bio">Исследователь океана</p>       
+                </div>    
+            </div>   
+            <button class="profile__button-add" type="button"></button>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <img src="./images/polyarnzori.jpg" alt="Фото коса в Полярных Зорях" class="card__image">
+                <div class="card__descripton">  
+                    <h2 class="card__title">Полярные Зори</h2>
+                    <button class="card__button-like card__button-like_active" type="button"></button>
+                </div>
             </div>
-        </div>   
-        <button class="profile__button_add"></button>
-    </section>
-    <section class="cards">
-        <div class="card">
-            <img src="./images/polyarnzori.jpg" alt="аватар профиля" class="card__image">
-            <div class="card__descripton">  
-                <h2 class="card__title">Полярные Зори</h2>
-                <button class="card__button_like card__button_like_active"></button>
+            <div class="card">
+                <img src="./images/hibiny.jpg" alt="Фото заснежинные Хибины" class="card__image">
+                <div class="card__descripton">
+                    <h2 class="card__title">Хибины</h2>
+                    <button class="card__button-like card__button-like_active" type="button"></button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./images/hibiny.jpg" alt="аватар профиля" class="card__image">
-            <div class="card__descripton">
-                <h2 class="card__title">Хибины</h2>
-                <button class="card__button_like card__button_like_active"></button>
+            <div class="card">
+                <img src="./images/seodozero.jpg" alt="Фото Сейдо озера" class="card__image">
+                <div class="card__descripton">
+                    <h2 class="card__title">Сейдо озеро</h2>
+                    <button class="card__button-like card__button-like_active"  type="button"></button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./images/seodozero.jpg" alt="аватар профиля" class="card__image">
-            <div class="card__descripton">
-                <h2 class="card__title">Сейдо озеро</h2>
-                <button class="card__button_like card__button_like_active"></button>
+            <div class="card">
+                <img src="./images/kolskypoluostrov.jpg" alt="Фото природа Кольского полуострова" class="card__image">
+                <div class="card__descripton">
+                    <h2 class="card__title">Кольский полуостров</h2>
+                    <button class="card__button-like card__button-like_active" type="button"></button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./images/kolskypoluostrov.jpg" alt="аватар профиля" class="card__image">
-            <div class="card__descripton">
-                <h2 class="card__title">Кольский полуостров</h2>
-                <button class="card__button_like card__button_like_active"></button>
+            <div class="card">
+                <img src="./images/kirovsk.jpg" alt="Фото вечерний Кировск" class="card__image">
+                <div class="card__descripton">
+                    <h2 class="card__title">Кировск</h2>
+                    <button class="card__button-like card__button-like_active" type="button"></button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./images/kirovsk.jpg" alt="аватар профиля" class="card__image">
-            <div class="card__descripton">
-                <h2 class="card__title">Кировск</h2>
-                <button class="card__button_like card__button_like_active"></button>
+            <div class="card">
+                <img src="./images/imandra.jpg" alt="Фото озера Имандра" class="card__image">
+                <div class="card__descripton">
+                    <h2 class="card__title">Озеро Имандра</h2>
+                    <button class="card__button-like card__button-like_active" type="button"></button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./images/imandra.jpg" alt="аватар профиля" class="card__image">
-            <div class="card__descripton">
-                <h2 class="card__title">Озеро Имандра</h2>
-                <button class="card__button_like card__button_like_active"></button>
-            </div>
-        </div>
-      </section>
+        </section>
+    </main>
     <footer class="footer">
-        <h2 class="footer__title">© 2020 Mesto Russia</h2>
+        <p class="footer__title">© 2020 Mesto Russia</p>
     </footer>
-    <div class="popup popup__opened">
+    <div class="popup popup_opened">
         <div class="popup__container">
-            <button class="popup__button_close"></button>
+            <button class="popup__button-close"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <label>
-                <input type="text" value="Жак-Ив Кусто" placeholder="Ваше имя" class="popup__label">
-            </label>
-            <label>
-                <input type="text" value="Исследователь океана" placeholder="О вас" class="popup__label">
-            </label>
-            <button class="popup__button_save">Сохранить</button>
+            <form name="edit">
+                <label>
+                    <input type="text" value="Жак-Ив Кусто" name="name" placeholder="Ваше имя" class="popup__label">
+                </label>
+                <label>
+                    <input type="text" value="Исследователь океана" name="biography" placeholder="О вас" class="popup__label">
+                </label>
+                <button class="popup__button-save" type="submit">Сохранить</button>
+            </form>
         </div>
     </div>
 </body>

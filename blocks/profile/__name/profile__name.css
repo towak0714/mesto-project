@@ -6,13 +6,19 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    max-width: 295px;
 }
 
 @media screen and (max-width: 779.98px) {
     .profile__name {
         font-size: 27px;
         line-height: 32.68px;
-        font-weight: 500;
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile__name {
+        max-width: 220px;
     }
 }
