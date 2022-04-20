@@ -11,6 +11,7 @@
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     cursor: pointer;
+    background-size: 100%;
 }
 
 @media screen and (max-width: 779.98px) {
