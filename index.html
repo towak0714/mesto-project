@@ -23,68 +23,62 @@
             </div>   
             <button class="profile__button-add" type="button"></button>
         </section>
-        <section class="cards">
-            <div class="card">
-                <img src="./images/polyarnzori.jpg" alt="Фото коса в Полярных Зорях" class="card__image">
-                <div class="card__descripton">  
-                    <h2 class="card__title">Полярные Зори</h2>
-                    <button class="card__button-like card__button-like_active" type="button"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/hibiny.jpg" alt="Фото заснежинные Хибины" class="card__image">
-                <div class="card__descripton">
-                    <h2 class="card__title">Хибины</h2>
-                    <button class="card__button-like card__button-like_active" type="button"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/seodozero.jpg" alt="Фото Сейдо озера" class="card__image">
-                <div class="card__descripton">
-                    <h2 class="card__title">Сейдо озеро</h2>
-                    <button class="card__button-like card__button-like_active"  type="button"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/kolskypoluostrov.jpg" alt="Фото природа Кольского полуострова" class="card__image">
-                <div class="card__descripton">
-                    <h2 class="card__title">Кольский полуостров</h2>
-                    <button class="card__button-like card__button-like_active" type="button"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/kirovsk.jpg" alt="Фото вечерний Кировск" class="card__image">
-                <div class="card__descripton">
-                    <h2 class="card__title">Кировск</h2>
-                    <button class="card__button-like card__button-like_active" type="button"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/imandra.jpg" alt="Фото озера Имандра" class="card__image">
-                <div class="card__descripton">
-                    <h2 class="card__title">Озеро Имандра</h2>
-                    <button class="card__button-like card__button-like_active" type="button"></button>
-                </div>
-            </div>
+        <section class="cards"> 
         </section>
     </main>
     <footer class="footer">
         <p class="footer__title">© 2020 Mesto Russia</p>
     </footer>
-    <div class="popup popup_opened">
+    <div class="popup popup_profile">
         <div class="popup__container">
-            <button class="popup__button-close" type="button"></button>
+            <button id= "popup-close" class="popup__button-close popup_profile-close" type="button"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form name="edit">
+            <form name="edit" class="form-profile">
                 <label>
-                    <input type="text" value="Жак-Ив Кусто" name="name" placeholder="Ваше имя" class="popup__label">
+                    <input type="text" value="" name="name" placeholder="Ваше имя" id="inputName" class="popup__label">
                 </label>
                 <label>
-                    <input type="text" value="Исследователь океана" name="biography" placeholder="О вас" class="popup__label">
+                    <input type="text" value="" name="biography" placeholder="О вас" id="inputBio" class="popup__label">
                 </label>
-                <button class="popup__button-save" type="submit">Сохранить</button>
+                <button class="popup__button-save" id="profileSave" type="submit">Сохранить</button>
             </form>
         </div>
     </div>
+    
+    <div class="popup popup_card">
+        <div class="popup__container">
+            <button class="popup__button-close popup_card-close" type="button"></button>
+            <h2 class="popup__title">Новое Место</h2>
+            <form name="edit" class="form-card">
+                <label>
+                    <input type="text" value="" name="title" placeholder="Название" id="inputTitle" class="popup__label"> 
+                </label>
+                <label>
+                    <input type="text" value="" name="iamge" placeholder="Ссылка на картинку" id="inputImage" class="popup__label">
+                </label>
+                <button class="popup__button-save" id="cardSave" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup popup_viewer">
+        <div class="popup__content">
+            <button class="popup__button-close popup_viewer-close" type="button"></button>
+            <img class="popup__image" src="" alt=>
+            <h2 class="popup__descripton">Новое Место</h2>
+        </div>
+    </div>
+
+<template id="card-template">
+    <div class="card">
+        <button class="card__button-delete" type="button"></button>
+        <img class="card__image" alt="" src="">
+        <div class="card__descripton">
+            <h2 class="card__title"></h2>
+            <button class="card__button-like card__button-like_active" type="button"></button>
+        </div>
+</template>
+
+    <script src="script.js"></script>
 </body>
 </html>

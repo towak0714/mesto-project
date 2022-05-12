@@ -12,6 +12,7 @@
     width: 358px;
     box-sizing: border-box;
     height: 27px;
+    z-index: 10;
 }
 
 @media screen and (max-width: 779.98px) {

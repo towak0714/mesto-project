@@ -2,3 +2,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 779.98px) {
+    .profile__descripton  {
+        flex-direction: column;
+    }
+}
