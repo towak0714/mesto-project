@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-color: inherit;
     min-width: 22px;
+    transition: opacity .2s linear;
  }
 
 .card__button-like:hover {

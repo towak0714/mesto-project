@@ -9,6 +9,7 @@
     height: 24px;
     border: 1px solid #FFFFFF;
     margin-top: 15px;
+    transition: opacity .2s linear;
 }
 
 @media screen and (max-width: 779.98px) {

@@ -162,6 +162,7 @@ const initialCards = [
           });
       
     };
+    // Прикрепляем обработчик к форме и обработчик к кнопке сохранения о закрытии попапа.
     const buttonSaveCard = document.querySelector('#cardSave').addEventListener('click', () => {
       popupCard.classList.remove('popup_opened');
     });

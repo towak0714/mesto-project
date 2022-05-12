@@ -12,6 +12,7 @@
     background-size: 100%;
     top: 20px;
     right: 20px;
+    transition: opacity .2s linear;
 }
 
 .card__button-delete:hover {
