@@ -1,7 +1,7 @@
 # Проект: Место
 
 
-* [Ссылка на проект](https://towak0714.github.io/revin-mesto/)
+* [Ссылка на проект](https://towak0714.github.io/mesto-project-revin/)
 
 **Figma**
 
