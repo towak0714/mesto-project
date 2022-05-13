@@ -154,7 +154,7 @@ function openPopup(popup) {
 };
 
 //Функция добавление карточек из попапа через Enter.
-function keySave(evt) {
+function SaveCardKey(evt) {
   if (evt.key === 'Enter') {
     handleCardsFormSubmit(evt);
   }
