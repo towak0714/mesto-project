@@ -2,7 +2,7 @@
     background-image: url(../../../images/deleteCard.svg);
     background-position: center;
     background-repeat: no-repeat;
-    width: 18px;
+    max-width: 18px;
     height: 19px;
     position: absolute;
     z-index: 1;
